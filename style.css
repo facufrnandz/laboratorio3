@@ -177,6 +177,9 @@ button#cerrarresultado{
     position: absolute;
     font-weight: bold;
 }
+button#cerrarresultado:hover{
+   background-color: rgb(209, 89, 89);
+}
 
 #true {
     margin-left: 795px;

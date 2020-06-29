@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <title>Parcial de Laboratorio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <h1>PARCIAL DE CONTABILIDAD</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">PARCIAL</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+    
+        <form id="formuparcial">
+            
+            <!--PREGUNTA 1-->
+            <section>
+                <h2> Pregunta 1:</h2>
+                <h3> ¿Que es el Activo?</h3>
+                <label><input type="radio" name="preg1" class ="preg1" value="1"/>Bienes y derechos de los que la empresa es propietaria.  </label>
+                <label><input type="radio" name="preg1" class ="preg1" value="2"/>Las deudas que la empresa posee. </label>
+                <label><input type="radio" name="preg1" class ="preg1" value="3" />El valor total de una empresa una vez descontadas las deudas. </label>
+                <label><input type="radio" name="preg1" class ="preg1" value="4" />Ninguna de las anteriores. </label>
+            </section>
+            
+            <!--PREGUNTA 2-->
+            <section>
+                <h2> Pregunta 2:</h2>
+                <h3> Los bienes y derechos de una empresa estan representadas en el: </h3>
+                <label><input type="radio" name="preg2" value="1" />Pasivo.</label>
+                <label><input type="radio" name="preg2" value="2" />Activo.</label>
+                <label><input type="radio" name="preg2" value="3" />Patrimonio Neto.</label>
+                <label><input type="radio" name="preg2" value="4" />Ninguna de las anteriores.</label>
+            </section>
+            
+            <!--PREGUNTA 3-->
+            <section>
+                <h2> Pregunta 3:</h2>
+                <h3> Las Cuentas de Resultado Negativo son: </h3>
+                <input type="text" id="preg3" class="respuestas" placeholder="Ingrese su respuesta aqui" autocomplete="off"/>
+            </section>
+            
+            <!--PREGUNTA 4-->
+            <section>
+                <h2> Pregunta 4:</h2>
+                <h3> Seleccione la o las ecuaciones correctas: </h3>
+                <label><input type="checkbox" name="preg4"  value="1" />Activo = Pasivo + Patrimonio</label>
+                <label><input type="checkbox" name="preg4"  value="2" />Pasivo = Activo - Patrimonio Neto</label>
+                <label><input type="checkbox" name="preg4"  value="3" />Activo = Pasivo - Patrimonio Neto</label>
+                <label><input type="checkbox" name="preg4"  value="4" />Activo = Patrimonio Neto</label>
+            </section>
+            
+            <!--PREGUNTA 5-->
+            <section>
+                <h2> Pregunta 5:</h2>
+                <h3> Las Cuentas de Resultado Positivo son: </h3>
+                <input type="text" id="preg5" class="respuestas" placeholder="Ingrese su respuesta aqui" autocomplete="off"/>
+            </section>
+            
+            <!--PREGUNTA 6-->
+            <section>
+                <h2> Pregunta 6:</h2>
+                <h3> Si recibimos $1000 en efectivo, la cuenta caja suma en:</h3>
+                
+                <select id="preg6">
+                    <option value="vacio">--Elegir--</option>
+                    <option value="debe">DEBE</option>
+                    <option value="haber">HABER</option>
+            
+                </select>
+            </section>
+            
+            <!--PREGUNTA 7-->
+            <section>
+                <h2> Pregunta 7:</h2>
+                <h3> Si recibimos un cheque por $25000 ¿Que cuenta utilizarias?:</h3>
+                <input type="text" id="preg7" class="respuestas" placeholder="Ingrese su respuesta aqui" autocomplete="off"/>
+            </section>
+            
+            <!--PREGUNTA 8-->
+            <section>
+                <h2> Pregunta 8:</h2>
+                <h3> ¿Cual o cuales no son elementos del Activo?</h3>
+                <label><input type="checkbox" name="preg8" value="1" />Caja</label>
+                <label><input type="checkbox" name="preg8"  value="2" />Proveedores</label>
+                <label><input type="checkbox" name="preg8"  value="3" />Deudores por ventas</label>
+                <label><input type="checkbox" name="preg8"  value="4" />Alquileres Cobrados</label>
+            </section>
+            
+            <!--PREGUNTA 9-->
+            <section>
+                <h2> Pregunta 9:</h2>
+                <h3> ¿Cual o cuales no son elementos del Pasivo?</h3>
+                <label><input type="checkbox" name="preg9" value="1" />Valores a depositar</label>
+                <label><input type="checkbox" name="preg9" value="2" />Proveedores</label>
+                <label><input type="checkbox" name="preg9" value="3" />Intereses Perdidos</label>
+                <label><input type="checkbox" name="preg9" value="4" />Acreedores</label>
+            </section>
+            
+            <!--PREGUNTA 10-->
+            <section>
+                <h2> Pregunta 10:</h2>
+                <h3> ¿Que cuenta utilizarias si estas comprometiendote a pagar con un documento con nuestra firma?</h3>
+                <input type="text" id="preg10" class="respuestas" placeholder="Ingrese su respuesta aqui" autocomplete="off"/>
+            </section>
+    
+            <button type="button" id="botonparcial" onclick="resultado()"> Enviar Respuestas </button>
+    
+        </form>
+
+        
+        <section id="resultadoparcial">
+            <button type ="button" id="cerrarresultado" onclick="cerrarresultado()">X</button>
+            <img src="false.png" id="false">
+            <img src="true.png" id="true">
+            <h2 id ="resultadoparcial1"></h2>
+            <h3 id ="puntajeparcial"></h3>
+
+            <div>
+                <h2 id="mostrarpreg0" class="h2resultado"></h2>
+                <h3 id="resultadopreg0"></h3>
+            </div>
+            <div>
+                <h2 id="mostrarpreg1" class="h2resultado"></h2>
+                <h3 id="resultadopreg1"></h3>
+            </div>
+            <div>
+                <h2 id="mostrarpreg2" class="h2resultado"></h2>
+                <h3 id="resultadopreg2"></h3>
+            </div>
+            <div>
+                <h2 id="mostrarpreg3" class="h2resultado"></h2>
+                <h3 id="resultadopreg3"></h3>
+            </div>
+            <div>
+                <h2 id="mostrarpreg4" class="h2resultado"></h2>
+                <h3 id="resultadopreg4"></h3>
+            </div>
+            <div>
+                <h2 id="mostrarpreg5" class="h2resultado"></h2>
+                <h3 id="resultadopreg5"></h3>
+            </div>
+            <div>
+                <h2 id="mostrarpreg6" class="h2resultado"></h2>
+                <h3 id="resultadopreg6"></h3>
+            </div>
+            <div>
+                <h2 id="mostrarpreg7" class="h2resultado"></h2>
+                <h3 id="resultadopreg7"></h3>
+            </div>
+            <div>
+                <h2 id="mostrarpreg8" class="h2resultado"></h2>
+                <h3 id="resultadopreg8"></h3>
+            </div>
+            <div>
+                <h2 id="mostrarpreg9" class="h2resultado"></h2>
+                <h3 id="resultadopreg9"></h3>
+            </div>
+
+        </section>
+
+    </body>
+
+</html>

@@ -1,0 +1,190 @@
+body{
+    background-image: ;
+    margin: 0;
+    padding: 0;
+    background-color: snow;
+}
+
+header{
+    background-image: url("oficinas3.jpg");
+    background-size: cover;
+    padding-top: 20px;
+}
+nav{
+    background-color:#292929;
+
+}
+nav ul{
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
+nav ul li{
+    font-family: 'Bahnschrift SemiBold' ;
+    display: inline-flex;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration-line: none;
+    
+}
+
+nav ul li a:hover{
+    transition-duration: 0.2s;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 6px;
+    padding-left: 6px;
+    background-color: rgb(29, 29, 29);
+    color: rgb(247, 220, 186);
+    
+}
+
+h1{
+    color: white;
+    font-family: 'Segoe UI Black' ;
+    text-align: center;
+    padding-bottom: 15px;
+    text-shadow: 1px 1px black;
+}
+h2{
+    color:  black;
+    font-family: 'Bahnschrift SemiBold' ;
+    font-weight: bolder;
+    border-bottom: 1px rgb(208, 211, 214) solid;
+}
+h2#resultadoparcial1{
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px black;
+    border-bottom: 1px rgb(29, 29, 29, 0.5) solid;
+}
+
+h3{
+    color:  black;
+    font-family: 'Bahnschrift SemiBold' ;
+    font-weight: normal;
+}
+
+
+label{
+    font-family: 'calibri';
+    font-size: 18px;
+}
+section{
+    background-color: white;
+    margin: 1cm;
+    padding: 1cm;
+    padding-top: 0.1cm;
+    box-shadow: 2px 2px 15px -2px lightslategray;
+    border-radius: 10px;
+    background-image: url("fondoblanco3.jpg");
+}
+
+section#resultadoparcial {
+    
+    display: none;
+    margin-top: -800px;
+    margin-left: 395px;
+    width: 1122px;
+    height: 500px;
+    box-shadow: 0px 0px 2000px black;
+    overflow-y: scroll;
+    background-image: url("cafe.jpeg");
+    background-size: cover;
+}
+
+input.respuestas{
+    width: 20cm;
+    height: 0.6cm;
+    border: 0.2px rgb(0, 0, 0, 0.2) solid;
+    outline: none;
+}
+input.respuestas:focus{
+    transition-duration: 0.5s ;
+    box-shadow: 2px 3px 4px gray;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px ;
+}
+
+::-webkit-input-placeholder {
+    color: rgb(0, 0, 0, 0.3) ; 
+} 
+
+button{
+    margin-left: 22.3cm;
+    margin-bottom: 1cm;
+    height: 25px;
+    width: 200px;
+    background-color: rgb(29, 29, 29, 0.9);
+    color: snow;
+    font-size: 17px;
+    font-family: 'calibri';
+    border: none;
+    border-radius: 5px;
+}
+button:hover{
+    outline: none;
+    transition-duration: 0.2s;
+    box-shadow: 0px 0px 7px black;
+    background-color: rgb(29, 29, 29);    
+    height: 27px;
+    width: 204px;
+}
+
+div{
+    float: left;
+    margin-left: 76px;
+    margin-right: 76px;
+    margin-bottom: 20px;
+    height: 100px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 2px 2px 15px -2px lightslategray;
+    border-radius: 10px;
+    background-image: url("fondoblanco3.jpg");
+    background-size: cover;
+}
+
+.h2resultado{
+    text-align: center;
+    padding-top: -15px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+div h3{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px lightgray;
+}
+
+button#cerrarresultado{
+    padding-left: -15px;
+    margin-left: 1115px;
+    width: 20px;
+    position: absolute;
+    font-weight: bold;
+}
+
+#true {
+    margin-left: 795px;
+    margin-bottom: -60px;
+    display: none;
+}
+#false{
+    margin-left: 850px;
+    margin-bottom: -66px;
+    display: none;
+}
